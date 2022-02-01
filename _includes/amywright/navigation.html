@@ -1,0 +1,38 @@
+<nav>
+    {% for item in site.data.amywright.navigation %}
+    <div class="nav-border-container">
+        <div class="nav-item">
+            <a href="{{ item.link }}">
+                {{ item.name }}
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="nav-border-container">
+        <div class="nav-socials-desktop">
+            <div class="social-link link-twitter">
+                <div>Twitter: </div>
+                <a href="https://twitter.com/AmyWrightDev">@AmyWrightDev</a>
+            </div>
+            <div class="social-link link-github">
+                <div>GitHub: </div>
+                <a href="https://github.com/foreverWIP">@foreverWIP</a>
+            </div>
+            <div class="social-link link-email">
+                <div>E-Mail: </div>
+                <a href="mailto:amywrightmail@protonmail.com">amywrightmail</a>
+            </div>
+        </div>
+        <div class="nav-socials-mobile">
+            <div class="social-link link-twitter">
+                <a href="https://twitter.com/AmyWrightDev"><img src="https://cdn.cms-twdigitalassets.com/content/dam/developer-twitter/images/Twitter_logo_blue_48.png" /></a>
+            </div>
+            <div class="social-link link-github">
+                <a href="https://github.com/foreverWIP"><img src="https://github.com/fluidicon.png" /></a>
+            </div>
+            <div class="social-link link-email">
+                <a href="mailto:amywrightmail@protonmail.com">✉</a>
+            </div>
+        </div>
+    </div>
+</nav>
