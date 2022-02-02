@@ -5,6 +5,13 @@
             <a href="{{ item.link }}">
                 {{ item.name }}
             </a>
+            {% if item.name == "Projects" %}
+                <div class="nav-projects-dropdown">
+                    {% for project in site.data.amywright.projects %}
+                        <a href="projects.html#project-{{ project.path }}">{{ project.name }}</a>
+                    {% endfor %}
+                </div>
+            {% endif %}
         </div>
     </div>
     {% endfor %}

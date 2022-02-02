@@ -5,13 +5,17 @@ title: Home
 
 # About Me
 
-Welcome! I'm Amy Wright, a transgender programmer and occasional multimedia creator. Some quick info:
-
-- Age 24
-- Pronouns are she/her/hers
-- Located in California's Central Valley
-
-(portrait will be somewhere here)
+<div class="home-portrait-bullets">
+<div>
+<p>Welcome! I’m Amy Wright, a transgender programmer and occasional multimedia creator. Some quick info:</p>
+<ul>
+<li>Age 24</li>
+<li>Pronouns are she/her/hers</li>
+<li>Located in California’s Central Valley</li>
+</ul>
+</div>
+<img class="home-portrait" alt="A low-color portrait of myself." src="portrait.png" />
+</div>
 
 ## My history with computing and media creation
 
@@ -26,6 +30,7 @@ Notable programming languages I've used in any capacity:
 - Java
 - C
 - C++
+- HTML, CSS, JavaScript, some Ruby (enough to make this website anyway :P)
 - GML
 
 Notable game engines I've used in any capacity:
@@ -33,6 +38,7 @@ Notable game engines I've used in any capacity:
 - Unity
 - LÖVE2D
 - Game Maker Studio
+
 (I also have experience working on other proprietary engines themselves.)
 
 Notable software I've used in any capacity:
@@ -46,5 +52,6 @@ Notable software I've used in any capacity:
 - Make
 - GCC, GDB et. al.
 - Basically the standard Linux/UNIX development suite
+- Jekyll
 
 I hope what I have to show now and in the future sparks interest or inspiration to anyone that sees. <3

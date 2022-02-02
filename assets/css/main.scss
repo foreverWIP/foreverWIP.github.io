@@ -123,8 +123,10 @@ body {
 
     a {
         text-decoration: none;
-        font-style: italic;
         color: $color-content-light;
+    }
+    a:hover {
+        text-shadow: 0px 0px 10px $color-content-light;
     }
 
     code {
@@ -135,6 +137,27 @@ body {
             font-size: 15pt;
         }
         font-weight: bold;
+    }
+}
+
+.home-portrait-bullets {
+    display: flex;
+    div {
+        > p {
+            margin-top: 0;
+        }
+    }
+    img {
+        background-color: rgba($color: $color-bg-light, $alpha: 0.4);
+        box-shadow: 2px 4px 20px 20px rgba($color: $color-bg-light, $alpha: 0.4);
+        width: 100%;
+        height: 100%;
+        padding-right: 1em;
+        @include lg {
+            width: 40%;
+            height: 40%;
+            padding-right: 3em;
+        }
     }
 }
 
@@ -175,7 +198,7 @@ nav {
             a {
                 display: inline-block;
                 height: min-content;
-                margin-top: auto;
+                padding-top: 0.2em;
                 margin-bottom: auto;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 48pt;
@@ -185,8 +208,18 @@ nav {
                 text-decoration: none;
                 color: $color-content-light;
             }
+            a:hover {
+                text-shadow: 0px 0px 10px $color-content-light;
+            }
             border-left: 0.1em solid $color-content-midlight;
             border-right: 0.1em solid $color-content-midlight;
+
+            .nav-projects-dropdown > a {
+                font-size: xx-large;
+                @include lg {
+                    font-size: medium;
+                }
+            }
         }
 
         > .nav-item:visited {
@@ -209,6 +242,14 @@ nav {
             border-right: 0.05em solid $color-content-midlight;
         }
     }
+
+    .nav-border-container .nav-projects-dropdown {
+        display: none;
+    }
+
+    .nav-border-container:hover .nav-projects-dropdown {
+        display: inherit;
+    }
 }
 
 .page-footer {
@@ -224,6 +265,9 @@ nav {
     a {
         text-decoration: none;
         color: $color-content-light;
+    }
+    a:hover {
+        text-shadow: 0px 0px 10px $color-content-light;
     }
 }
 
@@ -276,6 +320,9 @@ nav {
             width: 4em;
             height: 4em;
         }
+    }
+    a:hover {
+        text-shadow: 0px 0px 10px $color-content-light;
     }
 }
 
