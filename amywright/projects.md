@@ -5,10 +5,10 @@ title: Projects
 
 # Projects
 
-This is a series of write-ups on major work I've done over the last few years. Everything is presented in chronological order.
+Below is a list of projects I've created or contributed to, presented in chronological order. Click a project's link to view a small writeup about it.
 
 {% for project in site.data.amywright.projects %}
-<h2 id="project-{{ project.path }}">{{ project.name }}</h2>
-
-{% include amywright/projects/{{ project.path }}.md %}
+<a href="/amywright/projects/{{ project.path }}.html">{{ project.name }}</a>
 {% endfor %}
+
+And of course, I've also created [The website you're looking at right now](https://foreverwip.github.io/).

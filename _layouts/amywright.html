@@ -16,6 +16,9 @@
     </div>
     <div class="page-content">
       {{ content }}
+      {% if page.dir == "/amywright/projects/" %}
+      {% include amywright/backtoprojects.html %}
+      {% endif %}
     </div>
   </div>
   {% include footer.html %}

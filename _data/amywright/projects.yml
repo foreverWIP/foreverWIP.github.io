@@ -4,5 +4,5 @@
   path: prototypen
 - name: NEID
   path: neid
-- name: Website
-  path: website
+- name: RSDKv4 Wii
+  path: rsdkv4wii

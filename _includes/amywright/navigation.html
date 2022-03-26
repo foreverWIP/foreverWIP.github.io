@@ -8,7 +8,7 @@
             {% if item.name == "Projects" %}
                 <div class="nav-projects-dropdown">
                     {% for project in site.data.amywright.projects %}
-                        <a href="projects.html#project-{{ project.path }}">{{ project.name }}</a>
+                        <a href="/amywright/projects/{{ project.path }}.html">{{ project.name }}</a>
                     {% endfor %}
                 </div>
             {% endif %}
