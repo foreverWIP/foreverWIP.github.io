@@ -14,7 +14,7 @@ title: Home
 <li>Located in California’s Central Valley</li>
 </ul>
 </div>
-<img class="home-portrait" alt="A low-color portrait of myself." src="portrait.png" />
+<img class="home-portrait" alt="A low-color portrait of myself." src="portraitnewps.png" />
 </div>
 
 ## My history with computing and media creation

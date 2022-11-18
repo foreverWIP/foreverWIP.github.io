@@ -79,6 +79,14 @@ body {
     @include lg {
         width: 800px;
     }
+
+    > svg > g > g > path {
+        fill: #7498cf;
+    }
+
+    > svg > g > g > polygon {
+        fill: #7498cf;
+    }
 }
 
 .page-header > img {
@@ -86,6 +94,15 @@ body {
 }
 
 .page-content {
+    > table > tbody > tr > td {
+        > h2 {
+            margin-bottom: 1%;
+            white-space: nowrap;
+        }
+        > p {
+            margin-top: 1%;
+        }
+    }
     p, h1, ul > li {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 35pt;
@@ -153,6 +170,7 @@ body {
         width: 100%;
         height: 100%;
         padding-right: 1em;
+        
         @include lg {
             width: 40%;
             height: 40%;
@@ -198,12 +216,13 @@ nav {
             a {
                 display: inline-block;
                 height: min-content;
-                padding-top: 0.2em;
+                padding-top: 0em;
                 margin-bottom: auto;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 48pt;
                 @include lg {
                     font-size: 24pt;
+                    padding-top: 0.5em;
                 }
                 text-decoration: none;
                 color: $color-content-light;
