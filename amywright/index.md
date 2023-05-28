@@ -9,7 +9,7 @@ title: Home
 <div>
 <p>Welcome! I’m Amy Wright, a transgender programmer and occasional multimedia creator. Some quick info:</p>
 <ul>
-<li>Age 24</li>
+<li>Age 25</li>
 <li>Pronouns are she/her/hers</li>
 <li>Located in California’s Central Valley</li>
 </ul>
