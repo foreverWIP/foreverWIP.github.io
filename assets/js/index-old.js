@@ -47,7 +47,7 @@ function setSubtitle() {
 
 var header_inject = `
 <div style="text-align: center; margin-bottom: 70px;">
-<h1 style="font-family:daysregular; font-size: 60pt; margin-top: 0; margin-bottom: -10px; letter-spacing: -0.1em;">Amy Wright</h1>
+<h1 style="font-family:daysregular; font-size: 60pt; margin-top: 0; margin-bottom: -10px; letter-spacing: -0.1em;">Amy Farbright</h1>
 <h4 class="header-subtitle"></h4>
 </div>
 `;
