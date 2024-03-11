@@ -177,13 +177,15 @@ nav {
     .nav-socials .link-email a {
       font-size: 40pt; }
 
-.neid-preview-data img:first-child {
-  padding-right: 0.3em; }
-  @media (min-width: 992px) {
-    .neid-preview-data img:first-child {
-      padding-right: 0.15em; } }
-.neid-preview-data img:last-child {
-  padding-left: 0.3em; }
-  @media (min-width: 992px) {
-    .neid-preview-data img:last-child {
-      padding-right: 0.15em; } }
+.neid-preview-data {
+  display: flex; }
+  .neid-preview-data img:first-child {
+    padding-right: 0.3em; }
+    @media (min-width: 992px) {
+      .neid-preview-data img:first-child {
+        padding-right: 0.15em; } }
+  .neid-preview-data img:last-child {
+    padding-left: 0.3em; }
+    @media (min-width: 992px) {
+      .neid-preview-data img:last-child {
+        padding-right: 0.15em; } }
