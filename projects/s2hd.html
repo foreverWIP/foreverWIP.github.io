@@ -10,12 +10,18 @@
 
 <body>
   <div class="page-container">
-    <div class="page-sidebar">
+    <div class="top-menu">
+      <div class="menu-button">
+        <a class="sidebar-icon" href="#sidebar"><h1>☰</h1></a>
+      </div>
+      <h1 class="header-name">Amy Farbright<img class="logo" src="/assets/img/tiney_amelia.png" /></h1>
+    </div>
+    <div class="page-sidebar" id="sidebar">
       <img class="logo" src="/assets/img/tiney_amelia.png" />
       <nav>
     <div class="nav-border-container">
         <div class="nav-pages">
-            <p class="nav-item"><a href="/index.html">Home</a></p>
+            <p class="nav-item"><a href="/index.html">About Me</a></p>
             
             <p class="nav-item"><a class="project" href="/projects/irlwork.html">IRL work</a></p>
             
@@ -52,7 +58,7 @@
     </div>
     <div class="page-content">
       <h1>Sonic 2 HD</h1>
-<p>Note: Most materials shown for this project were recorded casually during development, and rescued from a dying hard drive; as such, they may not be ideal demonstrations of my work on the project.</p>
+      <p>Note: Most materials shown for this project were recorded casually during development, and rescued from a dying hard drive; as such, they may not be ideal demonstrations of my work on the project.</p>
 <p>In mid-2019 I joined the team working on <a href="https://sonic2hd.com">Sonic 2 HD</a>, an ambitious fan reimagining of the classic Sega Genesis title, as a programmer. I was chosen through demonstrating my reverse engineering skills, such as decompiling the game's .NET bytecode to modify it for myself, as well as porting some of the original game's 68k assembly code to C#.</p>
 <p><img src="../assets/img/early_ss_renderer.jpg" alt="A screenshot from an early version of the game's Special Stage renderer, with basic 3D effects on display." title="Looks alright, but we can do better." /></p>
 <p>A lot of my initial work was on the audio system; I implemented stereo sound and a pitch and panning system for sound effects, as well as a dynamic track switching and looping system for the music.</p>
@@ -72,6 +78,7 @@
 </div>
     </div>
   </div>
+  <script src="/assets/js/mobile-navbar.js"></script>
 </body>
 
 </html>

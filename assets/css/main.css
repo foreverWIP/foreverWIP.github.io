@@ -5,44 +5,86 @@ body {
   background-size: 80px 140px;
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; }
 
+.header-name {
+  color: #c2d7ff !important; }
+
 .page-sidebar {
-  position: fixed;
   left: 0px;
   margin-left: auto;
   margin-right: auto;
   background-color: #261928;
   height: 100vh; }
+  @media (min-width: 992px) {
+    .page-sidebar {
+      display: block;
+      position: fixed;
+      width: 20vw; } }
+  @media (max-width: 991px) {
+    .page-sidebar {
+      margin-top: 6em; } }
+  @media (max-width: 991px) {
+    .page-sidebar .logo {
+      display: none; } }
   .page-sidebar img {
     max-width: 100px;
     max-height: 100px; }
-  @media (min-width: 992px) {
-    .page-sidebar {
-      width: 20vw; } }
   .page-sidebar > svg > g > g > path {
     fill: #7498cf; }
   .page-sidebar > svg > g > g > polygon {
     fill: #7498cf; }
 
+.menu-button {
+  position: absolute;
+  left: 0;
+  top: 0; }
+  .menu-button .sidebar-icon > h1 {
+    margin-top: -20%; }
+
+.top-menu {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  padding-bottom: 25px;
+  background-color: rgba(51, 35, 58, 0.8); }
+  @media (min-width: 992px) {
+    .top-menu {
+      display: none; } }
+  .top-menu .logo {
+    max-height: 128px;
+    margin-left: 85vw;
+    margin-top: -10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 128px; }
+  .top-menu h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45pt;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #eaaaf6; }
+    @media (min-width: 992px) {
+      .top-menu h1 {
+        font-size: 45pt; } }
 .page-content {
   position: absolute;
   right: 0px;
-  width: 75vw;
   padding-right: 2em;
   padding-bottom: 1em; }
-  .page-content > table > tbody > tr > td {
-    vertical-align: top; }
-    .page-content > table > tbody > tr > td > h2 {
-      margin-bottom: 1%;
-      white-space: nowrap; }
-    .page-content > table > tbody > tr > td > p {
-      margin-top: 1%;
-      margin-bottom: 1%;
-      display: inline; }
-    .page-content > table > tbody > tr > td video {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%; }
+  @media (min-width: 992px) {
+    .page-content {
+      width: 75vw; } }
+  @media (max-width: 991px) {
+    .page-content {
+      padding-left: 2em;
+      margin-top: 7em; } }
+  .page-content video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; }
   .page-content p,
   .page-content h1,
   .page-content ul > li {
@@ -64,6 +106,14 @@ body {
       display: block;
       margin-left: auto;
       margin-right: auto; }
+      @media (max-width: 991px) {
+        .page-content p img,
+        .page-content p audio,
+        .page-content h1 img,
+        .page-content h1 audio,
+        .page-content ul > li img,
+        .page-content ul > li audio {
+          width: 75%; } }
   .page-content h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 45pt;
@@ -81,7 +131,6 @@ body {
       .page-content h2 {
         font-size: 20pt; } }
   .page-content a {
-    text-decoration: none;
     color: #c2d7ff; }
   .page-content a:hover {
     text-shadow: 0px 0px 10px #c2d7ff; }
@@ -98,11 +147,19 @@ body {
       width: 75%; }
 
 .home-portrait-bullets {
-  display: block;
-  clear: right; }
-  .home-portrait-bullets .home-portrait {
-    max-width: 150px;
-    float: right; }
+  display: block; }
+  @media (min-width: 992px) {
+    .home-portrait-bullets {
+      clear: right; } }
+  @media (min-width: 992px) {
+    .home-portrait-bullets .home-portrait {
+      max-width: 150px;
+      float: right; } }
+  @media (max-width: 991px) {
+    .home-portrait-bullets .home-portrait {
+      height: 400px;
+      margin-left: 25vw;
+      margin-right: 25vw; } }
   .home-portrait-bullets .bullets {
     display: inline; }
 
@@ -161,7 +218,6 @@ nav {
     .credits {
       font-size: 14pt; } }
   .credits a {
-    text-decoration: none;
     color: #c2d7ff; }
   .credits p {
     margin-bottom: 0; }
@@ -183,7 +239,6 @@ nav {
     margin-right: auto; }
     .nav-socials .social-link a {
       text-align: right;
-      text-decoration: none;
       color: #c2d7ff; }
       .nav-socials .social-link a img {
         width: 2.5em;
