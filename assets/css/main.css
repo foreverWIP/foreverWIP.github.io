@@ -1,5 +1,6 @@
 body {
   margin-top: 0;
+  line-height: 1.5;
   background-attachment: fixed;
   background-color: #0d080b;
   background-size: 80px 140px;
@@ -21,7 +22,11 @@ body {
       width: 20vw; } }
   @media (max-width: 991px) {
     .page-sidebar {
-      margin-top: 6em; } }
+      height: 98.9vh; }
+      .page-sidebar .nav-item {
+        padding-top: 2em; }
+      .page-sidebar .nav-item:first-child {
+        padding-top: 9em; } }
   @media (max-width: 991px) {
     .page-sidebar .logo {
       display: none; } }
@@ -37,7 +42,7 @@ body {
   position: absolute;
   left: 0;
   top: 0; }
-  .menu-button .sidebar-icon > h1 {
+  .menu-button a .sidebar-icon {
     margin-top: -20%; }
 
 .top-menu {
@@ -46,7 +51,7 @@ body {
   z-index: 1000;
   top: 0;
   padding-bottom: 25px;
-  background-color: rgba(51, 35, 58, 0.8); }
+  background-color: #33233a; }
   @media (min-width: 992px) {
     .top-menu {
       display: none; } }
@@ -116,7 +121,7 @@ body {
           width: 75%; } }
   .page-content h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 45pt;
+    font-size: 60pt;
     text-align: center;
     margin-top: 0;
     color: #eaaaf6; }
@@ -147,21 +152,21 @@ body {
       width: 75%; }
 
 .home-portrait-bullets {
-  display: block; }
-  @media (min-width: 992px) {
-    .home-portrait-bullets {
-      clear: right; } }
-  @media (min-width: 992px) {
-    .home-portrait-bullets .home-portrait {
-      max-width: 150px;
-      float: right; } }
-  @media (max-width: 991px) {
-    .home-portrait-bullets .home-portrait {
-      height: 400px;
-      margin-left: 25vw;
-      margin-right: 25vw; } }
+  display: flex;
+  clear: right; }
+  .home-portrait-bullets .home-portrait {
+    position: absolute;
+    right: 3em; }
+    @media (min-width: 992px) {
+      .home-portrait-bullets .home-portrait {
+        max-width: 150px; } }
+    @media (max-width: 991px) {
+      .home-portrait-bullets .home-portrait {
+        height: 400px;
+        align-self: center; } }
   .home-portrait-bullets .bullets {
-    display: inline; }
+    display: block;
+    width: 50%; }
 
 .home-portrait-bullets::after {
   content: "";
