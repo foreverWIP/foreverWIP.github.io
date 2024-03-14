@@ -27,12 +27,22 @@ body {
   position: absolute;
   right: 0px;
   width: 75vw;
-  padding-right: 2em; }
-  .page-content > table > tbody > tr > td > h2 {
-    margin-bottom: 1%;
-    white-space: nowrap; }
-  .page-content > table > tbody > tr > td > p {
-    margin-top: 1%; }
+  padding-right: 2em;
+  padding-bottom: 1em; }
+  .page-content > table > tbody > tr > td {
+    vertical-align: top; }
+    .page-content > table > tbody > tr > td > h2 {
+      margin-bottom: 1%;
+      white-space: nowrap; }
+    .page-content > table > tbody > tr > td > p {
+      margin-top: 1%;
+      margin-bottom: 1%;
+      display: inline; }
+    .page-content > table > tbody > tr > td video {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%; }
   .page-content p,
   .page-content h1,
   .page-content ul > li {
@@ -45,8 +55,11 @@ body {
       .page-content ul > li {
         font-size: 15pt; } }
     .page-content p img,
+    .page-content p audio,
     .page-content h1 img,
-    .page-content ul > li img {
+    .page-content h1 audio,
+    .page-content ul > li img,
+    .page-content ul > li audio {
       width: 50%;
       display: block;
       margin-left: auto;
@@ -79,6 +92,11 @@ body {
     @media (min-width: 992px) {
       .page-content code {
         font-size: 15pt; } }
+  .page-content .youtube-container {
+    text-align: center; }
+    .page-content .youtube-container iframe {
+      width: 75%; }
+
 .home-portrait-bullets {
   display: block;
   clear: right; }
@@ -177,15 +195,17 @@ nav {
     .nav-socials .link-email a {
       font-size: 40pt; }
 
-.neid-preview-data {
+.two-side-by-side {
   display: flex; }
-  .neid-preview-data img:first-child {
+  .two-side-by-side :first-child {
     padding-right: 0.3em; }
     @media (min-width: 992px) {
-      .neid-preview-data img:first-child {
+      .two-side-by-side :first-child {
         padding-right: 0.15em; } }
-  .neid-preview-data img:last-child {
+  .two-side-by-side :last-child {
     padding-left: 0.3em; }
     @media (min-width: 992px) {
-      .neid-preview-data img:last-child {
+      .two-side-by-side :last-child {
         padding-right: 0.15em; } }
+  .two-side-by-side video {
+    width: 50%; }

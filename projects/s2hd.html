@@ -55,13 +55,21 @@
 <p>Note: Most materials shown for this project were recorded casually during development, and rescued from a dying hard drive; as such, they may not be ideal demonstrations of my work on the project.</p>
 <p>In mid-2019 I joined the team working on <a href="https://sonic2hd.com">Sonic 2 HD</a>, an ambitious fan reimagining of the classic Sega Genesis title, as a programmer. I was chosen through demonstrating my reverse engineering skills, such as decompiling the game's .NET bytecode to modify it for myself, as well as porting some of the original game's 68k assembly code to C#.</p>
 <p><img src="../assets/img/early_ss_renderer.jpg" alt="A screenshot from an early version of the game's Special Stage renderer, with basic 3D effects on display." title="Looks alright, but we can do better." /></p>
-<p>A lot of my initial work was on the audio system; I implemented <a href="../assets/video/sfxtest.mp4">stereo sound and a pitch and panning system</a> for sound effects, as well as a <a href="../speedshoestest.mp4">dynamic track switching and looping system</a> for the music. But my biggest contribution to the game's development involved laying the groundwork for the visuals of the game's Special Stages. What was once a 2D background with perspective tricks is now a full 3D scene, with objects positioned in three axes instead of two. When I first joined the team, there was already some work done on a procedural 3D renderer that generated polygons on the fly based on the original game's data, but it was very simple and offered a very limited view of the stage. I thought we could do better than this.</p>
+<p>A lot of my initial work was on the audio system; I implemented stereo sound and a pitch and panning system for sound effects, as well as a dynamic track switching and looping system for the music.</p>
+<div class="two-side-by-side">
+<div style="flex-grow:1;" ></div>
+<video src="../assets/video/sfxtest.mp4" controls="controls"></video>
+<video src="../assets/video/speedshoestest.mp4" controls="controls"></video>
+<div style="flex-grow:1;" ></div>
+</div>
+<p>But my biggest contribution to the game's development involved laying the groundwork for the visuals of the game's Special Stages. What was once a 2D background with perspective tricks is now a full 3D scene, with objects positioned in three axes instead of two. When I first joined the team, there was already some work done on a procedural 3D renderer that generated polygons on the fly based on the original game's data, but it was very simple and offered a very limited view of the stage. I thought we could do better than this.</p>
 <p><img src="../assets/img/earlyrenderwork-opt.gif" alt="An gameplay recording showing early work on the new renderer." title="Something felt missing..." /></p>
 <p>One of the main goals I wanted to achieve with the new renderer was for the player to be able to see the twists and turns of the rest of the track in the distance as they went through the stage; The main draw of the stages in the original was their 3D look and being able to look ahead of you, so it felt like a natural step forward. At the time though, the renderer was only designed to generate the track relative to where you were in it. Achieving a fully-visible Special Stage then would require a lot more work...</p>
 <p><img src="../assets/img/ssvideopreview.jpg" alt="A screenshot of the new renderer as it was publicly demonstrated." title="Check the link below for a better look!" /></p>
 <p>I ended up doing an almost complete rewrite of the renderer; I wrote my own spatial hash implementation and camera class in order to cull geometry, and rewrote our geometry generator to calculate all vertices only once at load time. Along with some extra shaders I integrated into the renderer, it provided an incomplete, but still more engaging visual demonstration of what the game could do to give a classic scene a modern coat of paint.</p>
-<p>A video demonstration of my work on the renderer can be seen <a href="https://www.youtube.com/watch?v=eUu8JBvKO28">here</a>.</p>
-
+<div class="youtube-container">
+<iframe height="500" src="https://www.youtube-nocookie.com/embed/eUu8JBvKO28?si=M18NuA1LlLPGC8oK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
     </div>
   </div>
 </body>
