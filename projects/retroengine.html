@@ -3,19 +3,25 @@
 
 <head>
   <meta charset="utf-8">
-  <title>RSDKv4 Wii | Amy Farbright</title>
+  <title>Retro Engine Hacking | Amy Farbright</title>
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 </head>
 
 <body>
   <div class="page-container">
-    <div class="page-sidebar">
+    <div class="top-menu">
+      <div class="menu-button">
+        <a class="sidebar-icon" href="#sidebar"><h1>☰</h1></a>
+      </div>
+      <h1 class="header-name">Amy Farbright<img class="logo" src="/assets/img/tiney_amelia.png" /></h1>
+    </div>
+    <div class="page-sidebar" id="sidebar">
       <img class="logo" src="/assets/img/tiney_amelia.png" />
       <nav>
     <div class="nav-border-container">
         <div class="nav-pages">
-            <p class="nav-item"><a href="/index.html">Home</a></p>
+            <p class="nav-item"><a href="/index.html">About Me</a></p>
             
             <p class="nav-item"><a class="project" href="/projects/irlwork.html">IRL work</a></p>
             
@@ -52,7 +58,7 @@
     </div>
     <div class="page-content">
       <h1>Retro Engine Hacking</h1>
-<p>The technical aspects of the original Sonic the Hedgehog games for the Genesis/Mega Drive were a major influence in me learning to code. It's only natural then that I've toyed around lots with <a href="https://eveningstar.studio/tech.html">Retro Engine</a>, the custom-built engine used to officially ship remakes of the games (as well as retro revival Sonic Mania) between 2011-2022. While I have made my own private efforts to reverse engineer version 5 (the version of the engine that Mania uses), it was quickly superseded by <a href="https://github.com/Rubberduckycooly/RSDKv5-Decompilation">a separate large-scale decompilation effort</a>. Regardless, the engine is a very fun base for me to explore different design challenges. Here are a few projects I've started with my skills:</p>
+      <p>The technical aspects of the original Sonic the Hedgehog games for the Genesis/Mega Drive were a major influence in me learning to code. It's only natural then that I've toyed around lots with <a href="https://eveningstar.studio/tech.html">Retro Engine</a>, the custom-built engine used to officially ship remakes of the games (as well as retro revival Sonic Mania) between 2011-2022. While I have made my own private efforts to reverse engineer version 5 (the version of the engine that Mania uses), it was quickly superseded by <a href="https://github.com/Rubberduckycooly/RSDKv5-Decompilation">a separate large-scale decompilation effort</a>. Regardless, the engine is a very fun base for me to explore different design challenges. Here are a few projects I've started with my skills:</p>
 <ul>
 <li>
 <p><a href="https://github.com/foreverWIP/RSDKv5-Decompilation/tree/rust-integration">Rust integration (ongoing)</a>: This fork is attempting to port v5 of the decompilation to Rust, as a means to explore the tradeoffs of rust at FFI boundaries and as a way to make certain parts of the codebase easier to refactor.</p>
@@ -93,6 +99,7 @@
 </div>
     </div>
   </div>
+  <script src="/assets/js/mobile-navbar.js"></script>
 </body>
 
 </html>
