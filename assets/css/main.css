@@ -235,8 +235,13 @@ nav {
 
 .nav-socials {
   display: flex;
-  padding-top: 0.35em;
   max-height: 4em; }
+  @media (min-width: 992px) {
+    .nav-socials {
+      padding-top: 0.35em; } }
+  @media (max-width: 991px) {
+    .nav-socials {
+      margin-bottom: 5em; } }
   .nav-socials .social-link {
     font-family: Arial, Helvetica, sans-serif;
     color: #7498cf;
@@ -248,13 +253,19 @@ nav {
       .nav-socials .social-link a img {
         width: 2.5em;
         height: 2.5em; }
+        @media (max-width: 991px) {
+          .nav-socials .social-link a img {
+            width: 128px;
+            height: 128px; } }
     .nav-socials .social-link a:hover {
       text-shadow: 0px 0px 10px #c2d7ff; }
   .nav-socials .link-email {
     margin-top: -1em; }
     .nav-socials .link-email a {
       font-size: 40pt; }
-
+      @media (max-width: 991px) {
+        .nav-socials .link-email a {
+          font-size: 64pt; } }
 .two-side-by-side {
   display: flex; }
   .two-side-by-side :first-child {
