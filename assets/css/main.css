@@ -259,6 +259,11 @@ nav {
             height: 128px; } }
     .nav-socials .social-link a:hover {
       text-shadow: 0px 0px 10px #c2d7ff; }
+  .nav-socials .link-tumblr > a > img {
+    max-width: 70%;
+    max-height: auto; }
+  .nav-socials .link-bluesky > a > img {
+    filter: saturate(0) brightness(2); }
   .nav-socials .link-email {
     margin-top: -1em; }
     .nav-socials .link-email a {
