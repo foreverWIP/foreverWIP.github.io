@@ -155,7 +155,8 @@ body {
   display: flex;
   clear: right; }
   .home-portrait-bullets .home-portrait {
-    position: absolute;
+    display: flex;
+    align-self: right;
     right: 3em; }
     @media (min-width: 992px) {
       .home-portrait-bullets .home-portrait {
@@ -165,8 +166,7 @@ body {
         height: 400px;
         align-self: center; } }
   .home-portrait-bullets .bullets {
-    display: block;
-    width: 50%; }
+    flex-grow: 1; }
 
 .home-portrait-bullets::after {
   content: "";
