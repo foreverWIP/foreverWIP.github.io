@@ -280,7 +280,6 @@ body {
             width: 128px;
             height: 128px; } }
   .nav-socials .link-tumblr > a > img {
-    max-width: 70%;
     max-height: auto; }
   .nav-socials .link-bluesky > a > img {
     filter: saturate(0) brightness(2); }
