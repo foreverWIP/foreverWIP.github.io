@@ -261,8 +261,7 @@ body {
   display: flex; }
   @media (min-width: 992px) {
     .nav-socials {
-      margin-top: 10%;
-      margin-bottom: -5%; } }
+      margin-top: 10%; } }
   @media (max-width: 991px) {
     .nav-socials {
       margin-bottom: 5em; } }
@@ -309,5 +308,6 @@ body {
     @media (min-width: 992px) {
       .two-side-by-side :last-child {
         padding-right: 0.15em; } }
-  .two-side-by-side video, .two-side-by-side audio {
+  .two-side-by-side video,
+  .two-side-by-side audio {
     width: 50%; }
